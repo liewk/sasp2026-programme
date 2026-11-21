@@ -23,6 +23,8 @@ table.timetable thead th { background:var(--primary); color:#fff; padding:10px 6
 td.time-col { width:82px; text-align:center; font-weight:600; color:#555; background:#fafafa; font-size:.8rem; padding:5px 3px; }
 tbody.time-block td { border:1px solid #e0e0e0; vertical-align:top; padding:5px; }
 tbody.time-block { border-bottom:3px solid #ddd; }
+.event-cell.keynote { cursor:pointer; }
+.kn-title { font-weight:400; font-style:italic; font-size:.78rem; margin-top:4px; color:#5a4a00; }
 td.event-cell { background:#fff3cd; color:#7a5c00; font-weight:600; text-align:center; padding:10px 6px; font-size:.85rem; }
 td.empty-cell { background:#fafafa; min-height:50px; }
 td.slot-cell { min-width:155px; min-height:55px; background:#fdfdfd; }
@@ -58,7 +60,8 @@ footer { text-align:center; padding:20px; color:#888; font-size:.85rem; }
   <h1>SASP 2026 Conference Programme</h1>
   <p>Click any presentation to view details and abstract</p>
 </header>
-<main><div class="day-block" id="day1"><h2 class="day-title">Day 1 (26-Nov)</h2><table class="timetable" id="tbl-day1"><thead><tr><th class="time-col">Time</th><th>Tower Room</th><th>Great Hall 1</th><th>Great Hall 2</th><th>Great Hall 3</th><th>Camelot</th></tr></thead><tbody class="time-block" data-bid="blk1" data-time="8:30-12:00"><tr><td class="time-col">8:30-12:00</td><td colspan="5" class="event-cell">Preconferences</td></tr></tbody><tbody class="time-block" data-bid="blk2" data-time="12:00-13:30"><tr><td class="time-col">12:00-13:30</td><td colspan="5" class="event-cell" style="text-align:center;">Lunch — Not served</td></tr></tbody><tbody class="time-block" data-bid="blk3" data-time="13:30-14:30"><tr><td class="time-col">13:30-14:30</td><td class="empty-cell"></td><td colspan="3" class="event-cell">Mihi Whakatau and Welcome Address</td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk4" data-time="14:30-15:30"><tr><td class="time-col">14:30-15:30</td><td class="empty-cell"></td><td colspan="3" class="event-cell">OPRA</td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk5" data-time="15:30-16:00"><tr><td class="time-col">15:30-16:00</td><td colspan="5" class="event-cell">Break</td></tr></tbody><tbody class="time-block" data-bid="blk6" data-time="16:00-17:00"><tr><td class="time-col">16:00-17:00</td><td class="slot-cell" data-cell="TR1"></td><td class="slot-cell" data-cell="GH1-1"></td><td class="slot-cell" data-cell="GH2-1"></td><td class="slot-cell" data-cell="GH3-1"></td><td class="slot-cell" data-cell="B1"></td></tr></tbody><tbody class="time-block" data-bid="blk7" data-time="17:00-18:00"><tr><td class="time-col">17:00-18:00</td><td class="slot-cell" data-cell="TR2"></td><td class="slot-cell" data-cell="GH1-2"></td><td class="slot-cell" data-cell="GH2-2"></td><td class="slot-cell" data-cell="GH3-2"></td><td class="slot-cell" data-cell="B2"></td></tr></tbody><tbody class="time-block" data-bid="blk8" data-time="18:00-19:00"><tr><td class="time-col">18:00-19:00</td><td class="slot-cell" data-cell="TR2-18"></td><td class="slot-cell" data-cell="GH1-18"></td><td class="slot-cell" data-cell="GH2-18"></td><td class="slot-cell" data-cell="GH3-18"></td><td class="slot-cell" data-cell="B2-18"></td></tr></tbody><tbody class="time-block" data-bid="blk9" data-time="19:00-21:00"><tr><td class="time-col">19:00-21:00</td><td colspan="4" class="event-cell">Postgraduate Dinner</td><td class="event-cell">Evening Reception<div style="font-weight:400;font-size:.78rem;margin-top:4px">only small drinks and nibbles; dinner not provided</div></td></tr></tbody></table></div><div class="day-block" id="day2"><h2 class="day-title">Day 2 (27-Nov)</h2><table class="timetable" id="tbl-day2"><thead><tr><th class="time-col">Time</th><th>Tower Room</th><th>Great Hall 1</th><th>Great Hall 2</th><th>Great Hall 3</th><th>Camelot</th></tr></thead><tbody class="time-block" data-bid="blk10" data-time="8:30-9:30"><tr><td class="time-col">8:30-9:30</td><td class="slot-cell" data-cell="TR3"></td><td class="slot-cell" data-cell="GH1-3"></td><td class="slot-cell" data-cell="GH2-3"></td><td class="slot-cell" data-cell="GH3-3"></td><td class="slot-cell" data-cell="B3"></td></tr></tbody><tbody class="time-block" data-bid="blk11" data-time="9:30-10:30"><tr><td class="time-col">9:30-10:30</td><td class="slot-cell" data-cell="TR4"></td><td class="slot-cell" data-cell="GH1-4"></td><td class="slot-cell" data-cell="GH2-4"></td><td class="slot-cell" data-cell="GH3-4"></td><td class="slot-cell" data-cell="B4"></td></tr></tbody><tbody class="time-block" data-bid="blk12" data-time="10:30-11:00"><tr><td class="time-col">10:30-11:00</td><td colspan="5" class="event-cell">Break</td></tr></tbody><tbody class="time-block" data-bid="blk13" data-time="11:00-12:00"><tr><td class="time-col">11:00-12:00</td><td class="slot-cell" data-cell="TR5"></td><td class="slot-cell" data-cell="GH1-5"></td><td class="slot-cell" data-cell="GH2-5"></td><td class="slot-cell" data-cell="GH3-5"></td><td class="slot-cell" data-cell="B5"></td></tr></tbody><tbody class="time-block" data-bid="blk14" data-time="12:00-13:00"><tr><td class="time-col">12:00-13:00</td><td colspan="5" class="event-cell">Lunch</td></tr></tbody><tbody class="time-block" data-bid="blk14-poster"><tr><td class="time-col"></td><td class="empty-cell"></td><td colspan="3" class="slot-cell"><div class="session-block" style="background:#fff3cd;border:2px solid #7a5c00;"><div class="session-head"><span class="session-type">Poster</span><span style="font-size:0.65rem; color:#7a5c00; margin-left:6px; margin-top:2px;">(outside the Great Hall)</span></div><div class="card" style="border-left-color:#7a5c00;" onclick="openPosterSession(1)"><div class="card-title">Poster Session 1</div></div></div></td></tr></tbody><tbody class="time-block" data-bid="blk19" data-time="13:00-14:00"><tr><td class="time-col">13:00-14:00</td><td class="empty-cell"></td><td colspan="3" class="event-cell">Keynote 1: Jeanne L. Tsai</td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk20" data-time="14:00-15:00"><tr><td class="time-col">14:00-15:00</td><td class="empty-cell"></td><td colspan="3" class="event-cell">Outstanding Career Award: Alex Haslam</td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk18" data-time="15:00-15:30"><tr><td class="time-col">15:00-15:30</td><td colspan="5" class="event-cell">Break</td></tr></tbody><tbody class="time-block" data-bid="blk15" data-time="15:30-16:30"><tr><td class="time-col">15:30-16:30</td><td class="slot-cell" data-cell="TR6"></td><td class="slot-cell" data-cell="GH1-6"></td><td class="slot-cell" data-cell="GH2-6"></td><td class="slot-cell" data-cell="GH3-6"></td><td class="slot-cell" data-cell="B6"></td></tr></tbody><tbody class="time-block" data-bid="blk16" data-time="16:30-17:30"><tr><td class="time-col">16:30-17:30</td><td class="slot-cell" data-cell="TR7"></td><td class="slot-cell" data-cell="GH1-7"></td><td class="slot-cell" data-cell="GH2-7"></td><td class="slot-cell" data-cell="GH3-7"></td><td class="slot-cell" data-cell="B7"></td></tr></tbody><tbody class="time-block" data-bid="blk17" data-time="17:30-18:30"><tr><td class="time-col">17:30-18:30</td><td class="slot-cell" data-cell="TR9"></td><td class="slot-cell" data-cell="GH1-9"></td><td class="slot-cell" data-cell="GH2-9"></td><td class="slot-cell" data-cell="GH3-9"></td><td class="slot-cell" data-cell="B9"></td></tr></tbody><tbody class="time-block" data-bid="blk21" data-time="18:30-19:30"><tr><td class="time-col">18:30-19:30</td><td colspan="4" class="event-cell">Break</td><td class="event-cell">Conference Dinner Reception from 19:00</td></tr></tbody><tbody class="time-block" data-bid="blk22" data-time="19:30-21:00"><tr><td class="time-col">19:30-21:00</td><td class="empty-cell"></td><td colspan="3" class="event-cell">Conference Dinner</td><td class="empty-cell"></td></tr></tbody></table></div><div class="day-block" id="day3"><h2 class="day-title">Day 3 (28-Nov)</h2><table class="timetable" id="tbl-day3"><thead><tr><th class="time-col">Time</th><th>Tower Room</th><th>Great Hall 1</th><th>Great Hall 2</th><th>Great Hall 3</th><th>Camelot</th></tr></thead><tbody class="time-block" data-bid="blk23" data-time="8:30-9:30"><tr><td class="time-col">8:30-9:30</td><td class="slot-cell" data-cell="TR8"></td><td class="slot-cell" data-cell="GH1-8"></td><td class="slot-cell" data-cell="GH2-8"></td><td class="slot-cell" data-cell="GH3-8"></td><td class="slot-cell" data-cell="B8"></td></tr></tbody><tbody class="time-block" data-bid="blk24" data-time="9:30-10:00"><tr><td class="time-col">9:30-10:00</td><td colspan="5" class="event-cell">Break</td></tr></tbody><tbody class="time-block" data-bid="blk25" data-time="10:00-11:00"><tr><td class="time-col">10:00-11:00</td><td class="empty-cell"></td><td colspan="3" class="event-cell">Keynote 2: Matthew Hornsey</td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk26" data-time="11:00-12:00"><tr><td class="time-col">11:00-12:00</td><td class="empty-cell"></td><td colspan="3" class="event-cell">Early Career Award: Christoph Klebl<br><br>Distinguished Contribution Award: Tegan Cruwys<br><br>Distinguished Contribution Award: Iain Walker</td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk27" data-time="12:00-13:00"><tr><td class="time-col">12:00-13:00</td><td colspan="5" class="event-cell">Lunch</td></tr></tbody><tbody class="time-block" data-bid="blk23-poster"><tr><td class="time-col"></td><td class="empty-cell"></td><td colspan="3" class="slot-cell"><div class="session-block" style="background:#fff3cd;border:2px solid #7a5c00;"><div class="session-head"><span class="session-type">Poster</span><span style="font-size:0.65rem; color:#7a5c00; margin-left:6px; margin-top:2px;">(outside the Great Hall)</span></div><div class="card" style="border-left-color:#7a5c00;" onclick="openPosterSession(2)"><div class="card-title">Poster Session 2</div></div></div></td></tr></tbody><tbody class="time-block" data-bid="blk28" data-time="13:00-14:00"><tr><td class="time-col">13:00-14:00</td><td class="slot-cell" data-cell="TR10"></td><td class="slot-cell" data-cell="GH1-10"></td><td class="slot-cell" data-cell="GH2-10"></td><td class="slot-cell" data-cell="GH3-10"></td><td class="slot-cell" data-cell="B10"></td></tr></tbody><tbody class="time-block" data-bid="blk29" data-time="14:00-15:00"><tr><td class="time-col">14:00-15:00</td><td class="slot-cell" data-cell="TR11"></td><td class="slot-cell" data-cell="GH1-11"></td><td class="slot-cell" data-cell="GH2-11"></td><td class="slot-cell" data-cell="GH3-11"></td><td class="slot-cell" data-cell="B11"></td></tr></tbody><tbody class="time-block" data-bid="blk30" data-time="15:00-15:30"><tr><td class="time-col">15:00-15:30</td><td colspan="5" class="event-cell">Break</td></tr></tbody><tbody class="time-block" data-bid="blk31" data-time="15:30-16:30"><tr><td class="time-col">15:30-16:30</td><td class="slot-cell" data-cell="TR12"></td><td class="slot-cell" data-cell="GH1-12"></td><td class="slot-cell" data-cell="GH2-12"></td><td class="slot-cell" data-cell="GH3-12"></td><td class="slot-cell" data-cell="B12"></td></tr></tbody><tbody class="time-block" data-bid="blk32" data-time="16:30-17:30"><tr><td class="time-col">16:30-17:30</td><td class="slot-cell" data-cell="TR13"></td><td class="slot-cell" data-cell="GH1-13"></td><td class="slot-cell" data-cell="GH2-13"></td><td class="slot-cell" data-cell="GH3-13"></td><td class="slot-cell" data-cell="B13"></td></tr></tbody><tbody class="time-block" data-bid="blk34" data-time="17:30-19:00"><tr><td class="time-col">17:30-19:00</td><td colspan="4" class="empty-cell"></td><td class="event-cell">AGM and Closing Address</td></tr></tbody></table></div></main>
+<main><div class="day-block" id="day1"><h2 class="day-title">Day 1 (26-Nov)</h2><table class="timetable" id="tbl-day1"><thead><tr><th class="time-col">Time</th><th>Tower Room</th><th>Great Hall 1</th><th>Great Hall 2</th><th>Great Hall 3</th><th>Camelot</th></tr></thead><tbody class="time-block" data-bid="blk1" data-time="8:30-12:00"><tr><td class="time-col">8:30-12:00</td><td colspan="5" class="event-cell">Preconferences</td></tr></tbody><tbody class="time-block" data-bid="blk2" data-time="12:00-13:00"><tr><td class="time-col">12:00-13:00</td><td colspan="5" class="event-cell" style="text-align:center;">Lunch — Not served</td></tr></tbody>
+<tbody class="time-block" data-bid="blk2a" data-time="13:00-13:45"><tr><td class="time-col">13:00-13:45</td><td colspan="5" class="event-cell" style="text-align:center;">Registration Open</td></tr></tbody><tbody class="time-block" data-bid="blk3" data-time="13:45-14:30"><tr><td class="time-col">13:45-14:30</td><td class="empty-cell"></td><td colspan="3" class="event-cell">Mihi Whakatau and Welcome Address</td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk4" data-time="14:30-15:30"><tr><td class="time-col">14:30-15:30</td><td class="empty-cell"></td><td colspan="3" class="event-cell keynote"><div class="session-block" style="background:#fff3cd;border:2px solid #7a5c00;"><div class="session-head"><span class="session-type">OPRA</span></div><div class="card" style="border-left-color:#7a5c00;" onclick="openItem('OPRA')"><div class="card-title">Finalists</div><div style="margin-top:4px;"><div style="font-weight:400;font-size:.8rem;">Eden Clarke</div><div style="font-weight:400;font-size:.8rem;">Deb Hill Cone</div><div style="font-weight:400;font-size:.8rem;">Olivia Nop</div><div style="font-weight:400;font-size:.8rem;">Cassandra Quarisa</div><div style="font-weight:400;font-size:.8rem;">Hester Xiao</div></div></div></div></td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk5" data-time="15:30-16:00"><tr><td class="time-col">15:30-16:00</td><td colspan="5" class="event-cell">Break</td></tr></tbody><tbody class="time-block" data-bid="blk6" data-time="16:00-17:00"><tr><td class="time-col">16:00-17:00</td><td class="slot-cell" data-cell="TR1"></td><td class="slot-cell" data-cell="GH1-1"></td><td class="slot-cell" data-cell="GH2-1"></td><td class="slot-cell" data-cell="GH3-1"></td><td class="slot-cell" data-cell="B1"></td></tr></tbody><tbody class="time-block" data-bid="blk7" data-time="17:00-18:00"><tr><td class="time-col">17:00-18:00</td><td class="slot-cell" data-cell="TR2"></td><td class="slot-cell" data-cell="GH1-2"></td><td class="slot-cell" data-cell="GH2-2"></td><td class="slot-cell" data-cell="GH3-2"></td><td class="slot-cell" data-cell="B2"></td></tr></tbody><tbody class="time-block" data-bid="blk8" data-time="18:00-19:00"><tr><td class="time-col">18:00-19:00</td><td class="slot-cell" data-cell="TR2-18"></td><td class="slot-cell" data-cell="GH1-18"></td><td class="slot-cell" data-cell="GH2-18"></td><td class="slot-cell" data-cell="GH3-18"></td><td class="slot-cell" data-cell="B2-18"></td></tr></tbody><tbody class="time-block" data-bid="blk9" data-time="19:00-21:00"><tr><td class="time-col">19:00-21:00</td><td colspan="4" class="event-cell">Postgraduate Dinner</td><td class="event-cell">Evening Reception<div style="font-weight:400;font-size:.78rem;margin-top:4px">only small drinks and nibbles; dinner not provided</div></td></tr></tbody></table></div><div class="day-block" id="day2"><h2 class="day-title">Day 2 (27-Nov)</h2><table class="timetable" id="tbl-day2"><thead><tr><th class="time-col">Time</th><th>Tower Room</th><th>Great Hall 1</th><th>Great Hall 2</th><th>Great Hall 3</th><th>Camelot</th></tr></thead><tbody class="time-block" data-bid="blk10" data-time="8:30-9:30"><tr><td class="time-col">8:30-9:30</td><td class="slot-cell" data-cell="TR3"></td><td class="slot-cell" data-cell="GH1-3"></td><td class="slot-cell" data-cell="GH2-3"></td><td class="slot-cell" data-cell="GH3-3"></td><td class="slot-cell" data-cell="B3"></td></tr></tbody><tbody class="time-block" data-bid="blk11" data-time="9:30-10:30"><tr><td class="time-col">9:30-10:30</td><td class="slot-cell" data-cell="TR4"></td><td class="slot-cell" data-cell="GH1-4"></td><td class="slot-cell" data-cell="GH2-4"></td><td class="slot-cell" data-cell="GH3-4"></td><td class="slot-cell" data-cell="B4"></td></tr></tbody><tbody class="time-block" data-bid="blk12" data-time="10:30-11:00"><tr><td class="time-col">10:30-11:00</td><td colspan="5" class="event-cell">Break</td></tr></tbody><tbody class="time-block" data-bid="blk13" data-time="11:00-12:00"><tr><td class="time-col">11:00-12:00</td><td class="slot-cell" data-cell="TR5"></td><td class="slot-cell" data-cell="GH1-5"></td><td class="slot-cell" data-cell="GH2-5"></td><td class="slot-cell" data-cell="GH3-5"></td><td class="slot-cell" data-cell="B5"></td></tr></tbody><tbody class="time-block" data-bid="blk14" data-time="12:00-13:00"><tr><td class="time-col">12:00-13:00</td><td colspan="5" class="event-cell">Lunch</td></tr></tbody><tbody class="time-block" data-bid="blk14-poster"><tr><td class="time-col"></td><td class="empty-cell"></td><td colspan="3" class="slot-cell"><div class="session-block" style="background:#fff3cd;border:2px solid #7a5c00;"><div class="session-head"><span class="session-type">Poster</span><span style="font-size:0.65rem; color:#7a5c00; margin-left:6px; margin-top:2px;">(outside the Great Hall)</span></div><div class="card" style="border-left-color:#7a5c00;" onclick="openPosterSession(1)"><div class="card-title">Poster Session 1</div></div></div></td></tr></tbody><tbody class="time-block" data-bid="blk19" data-time="13:00-14:00"><tr><td class="time-col">13:00-14:00</td><td class="empty-cell"></td><td colspan="3" class="event-cell keynote"><div class="session-block" style="background:#fff3cd;border:2px solid #7a5c00;"><div class="session-head"><span class="session-type">Keynote 1</span></div><div class="card" style="border-left-color:#7a5c00;" onclick="openItem('KEY1')"><div class="card-title">Jeanne L. Tsai</div><div class="card-title" style="font-weight:400;font-style:italic;">Cultural Differences in the Smiles We Trust: The Role of Ideal Affect and Consequences for Resource Sharing</div></div></div></td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk20" data-time="14:00-15:00"><tr><td class="time-col">14:00-15:00</td><td class="empty-cell"></td><td colspan="3" class="event-cell">Outstanding Career Award: Alex Haslam</td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk18" data-time="15:00-15:30"><tr><td class="time-col">15:00-15:30</td><td colspan="5" class="event-cell">Break</td></tr></tbody><tbody class="time-block" data-bid="blk15" data-time="15:30-16:30"><tr><td class="time-col">15:30-16:30</td><td class="slot-cell" data-cell="TR6"></td><td class="slot-cell" data-cell="GH1-6"></td><td class="slot-cell" data-cell="GH2-6"></td><td class="slot-cell" data-cell="GH3-6"></td><td class="slot-cell" data-cell="B6"></td></tr></tbody><tbody class="time-block" data-bid="blk16" data-time="16:30-17:30"><tr><td class="time-col">16:30-17:30</td><td class="slot-cell" data-cell="TR7"></td><td class="slot-cell" data-cell="GH1-7"></td><td class="slot-cell" data-cell="GH2-7"></td><td class="slot-cell" data-cell="GH3-7"></td><td class="slot-cell" data-cell="B7"></td></tr></tbody><tbody class="time-block" data-bid="blk17" data-time="17:30-18:30"><tr><td class="time-col">17:30-18:30</td><td class="slot-cell" data-cell="TR9"></td><td class="slot-cell" data-cell="GH1-9"></td><td class="slot-cell" data-cell="GH2-9"></td><td class="slot-cell" data-cell="GH3-9"></td><td class="slot-cell" data-cell="B9"></td></tr></tbody><tbody class="time-block" data-bid="blk21" data-time="18:30-19:30"><tr><td class="time-col">18:30-19:30</td><td colspan="4" class="event-cell">Break</td><td class="event-cell">Conference Dinner Reception from 19:00</td></tr></tbody><tbody class="time-block" data-bid="blk22" data-time="19:30-21:00"><tr><td class="time-col">19:30-21:00</td><td class="empty-cell"></td><td colspan="3" class="event-cell">Conference Dinner</td><td class="empty-cell"></td></tr></tbody></table></div><div class="day-block" id="day3"><h2 class="day-title">Day 3 (28-Nov)</h2><table class="timetable" id="tbl-day3"><thead><tr><th class="time-col">Time</th><th>Tower Room</th><th>Great Hall 1</th><th>Great Hall 2</th><th>Great Hall 3</th><th>Camelot</th></tr></thead><tbody class="time-block" data-bid="blk23" data-time="8:30-9:30"><tr><td class="time-col">8:30-9:30</td><td class="slot-cell" data-cell="TR8"></td><td class="slot-cell" data-cell="GH1-8"></td><td class="slot-cell" data-cell="GH2-8"></td><td class="slot-cell" data-cell="GH3-8"></td><td class="slot-cell" data-cell="B8"></td></tr></tbody><tbody class="time-block" data-bid="blk24" data-time="9:30-10:00"><tr><td class="time-col">9:30-10:00</td><td colspan="5" class="event-cell">Break</td></tr></tbody><tbody class="time-block" data-bid="blk25" data-time="10:00-11:00"><tr><td class="time-col">10:00-11:00</td><td class="empty-cell"></td><td colspan="3" class="event-cell keynote"><div class="session-block" style="background:#fff3cd;border:2px solid #7a5c00;"><div class="session-head"><span class="session-type">Keynote 2</span></div><div class="card" style="border-left-color:#7a5c00;" onclick="openItem('KEY2')"><div class="card-title">Matthew Hornsey</div><div class="card-title" style="font-weight:400;font-style:italic;">Beneath the backlash: Ideology, misinformation, and the politics of climate transformation</div></div></div></td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk26" data-time="11:00-12:00"><tr><td class="time-col">11:00-12:00</td><td class="empty-cell"></td><td colspan="3" class="event-cell">Early Career Award: Christoph Klebl<br><br>Distinguished Contribution Award: Tegan Cruwys<br><br>Distinguished Contribution Award: Iain Walker</td><td class="empty-cell"></td></tr></tbody><tbody class="time-block" data-bid="blk27" data-time="12:00-13:00"><tr><td class="time-col">12:00-13:00</td><td colspan="5" class="event-cell">Lunch</td></tr></tbody><tbody class="time-block" data-bid="blk23-poster"><tr><td class="time-col"></td><td class="empty-cell"></td><td colspan="3" class="slot-cell"><div class="session-block" style="background:#fff3cd;border:2px solid #7a5c00;"><div class="session-head"><span class="session-type">Poster</span><span style="font-size:0.65rem; color:#7a5c00; margin-left:6px; margin-top:2px;">(outside the Great Hall)</span></div><div class="card" style="border-left-color:#7a5c00;" onclick="openPosterSession(2)"><div class="card-title">Poster Session 2</div></div></div></td></tr></tbody><tbody class="time-block" data-bid="blk28" data-time="13:00-14:00"><tr><td class="time-col">13:00-14:00</td><td class="slot-cell" data-cell="TR10"></td><td class="slot-cell" data-cell="GH1-10"></td><td class="slot-cell" data-cell="GH2-10"></td><td class="slot-cell" data-cell="GH3-10"></td><td class="slot-cell" data-cell="B10"></td></tr></tbody><tbody class="time-block" data-bid="blk29" data-time="14:00-15:00"><tr><td class="time-col">14:00-15:00</td><td class="slot-cell" data-cell="TR11"></td><td class="slot-cell" data-cell="GH1-11"></td><td class="slot-cell" data-cell="GH2-11"></td><td class="slot-cell" data-cell="GH3-11"></td><td class="slot-cell" data-cell="B11"></td></tr></tbody><tbody class="time-block" data-bid="blk30" data-time="15:00-15:30"><tr><td class="time-col">15:00-15:30</td><td colspan="5" class="event-cell">Break</td></tr></tbody><tbody class="time-block" data-bid="blk31" data-time="15:30-16:30"><tr><td class="time-col">15:30-16:30</td><td class="slot-cell" data-cell="TR12"></td><td class="slot-cell" data-cell="GH1-12"></td><td class="slot-cell" data-cell="GH2-12"></td><td class="slot-cell" data-cell="GH3-12"></td><td class="slot-cell" data-cell="B12"></td></tr></tbody><tbody class="time-block" data-bid="blk32" data-time="16:30-17:30"><tr><td class="time-col">16:30-17:30</td><td class="slot-cell" data-cell="TR13"></td><td class="slot-cell" data-cell="GH1-13"></td><td class="slot-cell" data-cell="GH2-13"></td><td class="slot-cell" data-cell="GH3-13"></td><td class="slot-cell" data-cell="B13"></td></tr></tbody><tbody class="time-block" data-bid="blk34" data-time="17:30-19:00"><tr><td class="time-col">17:30-19:00</td><td class="event-cell">AGM and Closing Address</td><td colspan="4" class="empty-cell"></td></tr></tbody></table></div></main>
 <div id="modal" class="modal" onclick="if(event.target===this)closeModal()">
   <div class="modal-content"><span class="close" onclick="closeModal()">&times;</span>
   <div id="modal-body"></div></div>
@@ -73,8 +76,8 @@ const ITEM_DATA = {
     "title": "Racism reduction approaches: From adults in the lab to children in the classroom.",
     "presenter_label": "Fiona White, Alexandra Wong, Sara Imani",
     "day": "Day 1 (26-Nov)",
-    "time": "16:00-17:00",
-    "room": "Tower Room",
+    "time": "18:00-19:00",
+    "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
       {
@@ -448,9 +451,9 @@ const ITEM_DATA = {
     "theme": "Emotion & Self-Regulation",
     "title": "The empty-self metaphor",
     "presenter_label": "Jack Klein",
-    "day": "Day 1 (26-Nov)",
-    "time": "16:00-17:00",
-    "room": "Great Hall 3",
+    "day": "Day 3 (28-Nov)",
+    "time": "16:30-17:30",
+    "room": "Great Hall 1",
     "fixed": false,
     "presentations": [
       {
@@ -691,7 +694,7 @@ const ITEM_DATA = {
     "title": "WDEP in Reality Therapy: Promoting Psychological Well-Being Among University Student",
     "presenter_label": "Yvonne Lee",
     "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
+    "time": "15:30-16:30",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -710,7 +713,7 @@ const ITEM_DATA = {
     "presenter_label": "Oksana Voznyuk, Hasi Kolongahapitiya, Matthew D. Hammond, Beatrice Alba",
     "day": "Day 1 (26-Nov)",
     "time": "17:00-18:00",
-    "room": "Great Hall 2",
+    "room": "Tower Room",
     "fixed": false,
     "presentations": [
       {
@@ -746,8 +749,8 @@ const ITEM_DATA = {
     "title": "New Insights into Emotion Regulation in Daily Life",
     "presenter_label": "Anh Tran, Emma Sullivan, Lindsie Arthur",
     "day": "Day 1 (26-Nov)",
-    "time": "17:00-18:00",
-    "room": "Great Hall 3",
+    "time": "18:00-19:00",
+    "room": "Tower Room",
     "fixed": true,
     "presentations": [
       {
@@ -826,8 +829,8 @@ const ITEM_DATA = {
     "theme": "Symposium",
     "title": "Questions Before Models: A Target-Trial Framework for Causal Inference with Longitudinal Data",
     "presenter_label": "Joseph Bulbulia, Donald W. Hine, Jessie Auckram, Mekonnen Tsehay, Mohammad Q. Islam",
-    "day": "Day 2 (27-Nov)",
-    "time": "8:30-9:30",
+    "day": "Day 3 (28-Nov)",
+    "time": "14:00-15:00",
     "room": "Great Hall 1",
     "fixed": false,
     "presentations": [
@@ -1728,9 +1731,9 @@ const ITEM_DATA = {
     "theme": "Symposium",
     "title": "After Injustice: Psychological Needs, Resistance, and Repair",
     "presenter_label": "Milla Jane, Lydia Woodyatt, Yasin Koc",
-    "day": "Day 2 (27-Nov)",
-    "time": "11:00-12:00",
-    "room": "Camelot",
+    "day": "Day 1 (26-Nov)",
+    "time": "18:00-19:00",
+    "room": "Great Hall 1",
     "fixed": false,
     "presentations": [
       {
@@ -1802,9 +1805,9 @@ const ITEM_DATA = {
     "theme": "Māori & Culture",
     "title": "Towards Culturally Responsive Mental Health Treatment for Cook Islands Māori",
     "presenter_label": "Meilani Payne",
-    "day": "Day 2 (27-Nov)",
+    "day": "Day 3 (28-Nov)",
     "time": "13:00-14:00",
-    "room": "Great Hall 1",
+    "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
       {
@@ -1820,9 +1823,9 @@ const ITEM_DATA = {
     "theme": "Māori & Culture",
     "title": "He Tinana, He Wairua, He Takatāpui: Navigating body, gender and transition through Te Whare Takatāpui",
     "presenter_label": "Benny Bush",
-    "day": "Day 2 (27-Nov)",
+    "day": "Day 3 (28-Nov)",
     "time": "13:00-14:00",
-    "room": "Great Hall 1",
+    "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
       {
@@ -1838,9 +1841,9 @@ const ITEM_DATA = {
     "theme": "Māori & Culture",
     "title": "He hīnau tātou, he māhoe, he patatē: Exploring the experiences of tāngata Māori on their reclamation journeys",
     "presenter_label": "Ezra Ramsay",
-    "day": "Day 2 (27-Nov)",
+    "day": "Day 3 (28-Nov)",
     "time": "13:00-14:00",
-    "room": "Great Hall 1",
+    "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
       {
@@ -1856,9 +1859,9 @@ const ITEM_DATA = {
     "theme": "Māori & Culture",
     "title": "Kia Whanake Me He Rākau: Exploring the Power of Whakapapa Knowledge to Promote Māori Wellbeing",
     "presenter_label": "Awatea Moxon",
-    "day": "Day 2 (27-Nov)",
+    "day": "Day 3 (28-Nov)",
     "time": "13:00-14:00",
-    "room": "Great Hall 1",
+    "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
       {
@@ -1874,9 +1877,9 @@ const ITEM_DATA = {
     "theme": "Māori & Culture",
     "title": "Rooted in Place: Exploring the relationship between Identity, Environment, and Rangatahi Wellbeing",
     "presenter_label": "Christopher Lockhart",
-    "day": "Day 2 (27-Nov)",
+    "day": "Day 3 (28-Nov)",
     "time": "13:00-14:00",
-    "room": "Great Hall 1",
+    "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
       {
@@ -1892,8 +1895,8 @@ const ITEM_DATA = {
     "theme": "Symposium",
     "title": "Beyond Acceptance: Contemporary Challenges and Inequalities for LGBTQ+ People",
     "presenter_label": "Kieren J. Lilly, Chelsea D’Cruz, Natalie Amos, Garrett Brown, Joel Anderson",
-    "day": "Day 2 (27-Nov)",
-    "time": "13:00-14:00",
+    "day": "Day 3 (28-Nov)",
+    "time": "14:00-15:00",
     "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
@@ -2144,7 +2147,7 @@ const ITEM_DATA = {
     "title": "From Perceived Truth to Extremist Violence: Social Psychological Perspectives on Conspiracy, Identity, and Radicalisation (Part 1)",
     "presenter_label": "Li Qian Tay, Michael J. Platow, Helen Taylor, Levi West",
     "day": "Day 2 (27-Nov)",
-    "time": "16:30-17:30",
+    "time": "15:30-16:30",
     "room": "Great Hall 1",
     "fixed": false,
     "presentations": [
@@ -2177,7 +2180,7 @@ const ITEM_DATA = {
     "title": "Moralisation and the Moral Lens on the Social World",
     "presenter_label": "Brock Bastian, Amy Lee, Mohsen Rahmani Tabar, Scott Danielson",
     "day": "Day 2 (27-Nov)",
-    "time": "16:30-17:30",
+    "time": "15:30-16:30",
     "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
@@ -2248,6 +2251,79 @@ const ITEM_DATA = {
       }
     ],
     "overview": "People’s emotional experiences, social interactions, and judgments of social behaviour are shaped by cultural contexts and, increasingly, digital environments. This symposium brings together four lines of research exploring how these contexts influence affect, well-being, and interpersonal behaviours. Li will open by examining cross-cultural similarities and differences in the associations between motives and strategies for making others feel worse among Anglo-Celtic, East Asian, and South Asian individuals. Expanding from emotion to well-being, Chang will show that social connectedness explains the link between idea-actual affect discrepancies (i.e., the gap between how people want to feel and how they actually feel) and well-being, but that the extent of this mediation differs between U.S. and Taiwanese participants. Perez will then broaden the focus to digital contexts by investigating cultural differences in video game desensitization and perception of aggressive behaviours among U.S. and Japanese participants. Finally, Rong will introduce the novel framework of passive co-rumination, the process of engaging with emotionally resonant online content while already experiencing negative emotions, to understand the emotional consequences of short-form social media videos. Together, these talks offer new insights on how cultural and digital contexts shape socioemotional experiences, with implications for interpersonal processes and well-being."
+  },
+  "KEY2": {
+    "type": "Keynote",
+    "theme": "Keynote",
+    "title": "Beneath the backlash: Ideology, misinformation, and the politics of climate transformation",
+    "presenter_label": "Matthew Hornsey",
+    "day": "Day 3 (28-Nov)",
+    "time": "10:00-11:00",
+    "room": "All rooms",
+    "fixed": true,
+    "presentations": [
+      {
+        "presenter": "Matthew Hornsey",
+        "affiliation": "Net Zero Observatory, University of Queensland",
+        "title": "Beneath the backlash: Ideology, misinformation, and the politics of climate transformation",
+        "abstract": "Public opposition to science and technology is often misdiagnosed as a problem of limited education or impoverished science communication. In this talk, I use the example of climate change to highlight how “anti-science” views are better understood as the surface expression of deeper “attitude roots” — enduring worldviews, identities, and vested interests that shape how people interpret science-related transformation. Drawing on cross-national data, I show that agreement with misinformation and conspiracy theories about climate change and renewable technology is increasingly mainstream. These beliefs are predicted far more strongly by worldviews, political ideology, and identity-related motivations than by education or science literacy. Because these roots are moralised and identity-linked, energy debates easily escalate into intergroup conflict and are vulnerable to being amplified by disinformation campaigns from bad-faith actors. Despite this pessimistic landscape, I describe various reasons for authentic hope that we are still capable of responding sensibly to global climate crises. Throughout the talk I will indulge in miscellaneous existential riffing: What role does psychology play in a landscape where the key levers for change are structural? How well is academia equipped to respond to fast-moving societal shifts? And when does “industry engagement” become appropriation?"
+      }
+    ]
+  },
+  "OPRA": {
+    "type": "Finalists",
+    "theme": "OPRA",
+    "title": "OPRA Finalists",
+    "presenter_label": "OPRA Finalists",
+    "day": "Day 1 (26-Nov)",
+    "time": "14:30-15:30",
+    "room": "Great Hall 1 / Great Hall 2 / Great Hall 3",
+    "fixed": true,
+    "presentations": [
+      {
+        "presenter": "Eden Clarke",
+        "affiliation": "University of Auckland; University of Sydney",
+        "title": "The Development and Maintenance of Sexual Prejudice and Marriage (In)equality in ‘Egalitarian’ Contexts"
+      },
+      {
+        "presenter": "Deb Hill Cone",
+        "affiliation": "University of Auckland",
+        "title": "The Limits of Gender Identity: Centrality, Well-being and Generational Change Among Cisgender Men and Women"
+      },
+      {
+        "presenter": "Olivia Nop",
+        "affiliation": "Te Herenga Waka Victoria University of Wellington",
+        "title": "Testing honor concern’s distinctiveness and sensitivity to honor threats"
+      },
+      {
+        "presenter": "Cassandra Quarisa",
+        "affiliation": "Flinders University",
+        "title": "The Social Life of Conspiracy Theories: Exploring the Pathways From Conspiracy Belief to Collective Action"
+      },
+      {
+        "presenter": "Hester Xiao",
+        "affiliation": "The University of Sydney",
+        "title": "Interpersonal Emotion Regulation at Home, at Work, and Across Contexts"
+      }
+    ]
+  },
+  "KEY1": {
+    "type": "Keynote",
+    "theme": "Keynote",
+    "title": "Cultural Differences in the Smiles We Trust: The Role of Ideal Affect and Consequences for Resource Sharing",
+    "presenter_label": "Jeanne L. Tsai",
+    "day": "Day 2 (27-Nov)",
+    "time": "13:00-14:00",
+    "room": "All rooms",
+    "fixed": true,
+    "presentations": [
+      {
+        "presenter": "Jeanne L. Tsai",
+        "affiliation": "Stanford University",
+        "title": "Cultural Differences in the Smiles We Trust: The Role of Ideal Affect and Consequences for Resource Sharing",
+        "abstract": "In this talk, I will present research from my lab showing that: (1) cultures differ in the smiles they view as trustworthy and affiliative, (2) these differences are related to the affective states that cultures value and encourage their members to feel (their “ideal affect”), and (3) when deciding whom to share resources with, people “default” to recipients whose expressions match their culture’s ideal affect. I will discuss the implications these findings have for resource-sharing in multicultural societies."
+      }
+    ]
   },
   "S224": {
     "type": "Symposium",
@@ -2357,7 +2433,7 @@ const ITEM_DATA = {
     "title": "From Perceived Truth to Extremist Violence: Social Psychological Perspectives on Conspiracy, Identity, and Radicalisation (Part 2)",
     "presenter_label": "Chris Wang, Olivia M. Sutton, Michael J. Platow, Levi West",
     "day": "Day 2 (27-Nov)",
-    "time": "17:30-18:30",
+    "time": "16:30-17:30",
     "room": "Great Hall 1",
     "fixed": false,
     "presentations": [
@@ -2389,7 +2465,7 @@ const ITEM_DATA = {
     "title": "Moral Character, Self-Understanding, and Changing Moral Worlds",
     "presenter_label": "Andy Vonasch, Lewis Nitschinsk, Allister Baker, Jingyi Ou",
     "day": "Day 2 (27-Nov)",
-    "time": "17:30-18:30",
+    "time": "16:30-17:30",
     "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
@@ -3066,8 +3142,8 @@ const ITEM_DATA = {
     "title": "Understanding Shame Following Victimisation: A Qualitative Exploration",
     "presenter_label": "Sophie Horwood",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
-    "room": "Great Hall 2",
+    "time": "16:30-17:30",
+    "room": "Great Hall 1",
     "fixed": false,
     "presentations": [
       {
@@ -3084,7 +3160,7 @@ const ITEM_DATA = {
     "title": "People Ignore, Criticize and Shame Others when Situations are Higher in Adversity: A Daily Diary Study",
     "presenter_label": "Aurore Boullier",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
+    "time": "8:30-9:30",
     "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
@@ -3101,9 +3177,9 @@ const ITEM_DATA = {
     "theme": "Emotion & Self-Regulation",
     "title": "What is 'Gooning'? - an observational analysis of online forums.",
     "presenter_label": "Bianca Kotoulas",
-    "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
-    "room": "Great Hall 2",
+    "day": "Day 1 (26-Nov)",
+    "time": "16:00-17:00",
+    "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
       {
@@ -3120,7 +3196,7 @@ const ITEM_DATA = {
     "title": "The effect of gist and verbatim information from ingroup and outgroup politicians on the development of false memories and beliefs.",
     "presenter_label": "Dr Deanne Green",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
+    "time": "14:00-15:00",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3138,7 +3214,7 @@ const ITEM_DATA = {
     "title": "Are approach to learning measures reflective of social identity processes?",
     "presenter_label": "Mila Knezovic",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
+    "time": "14:00-15:00",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3156,7 +3232,7 @@ const ITEM_DATA = {
     "title": "",
     "presenter_label": "Samantha Mayes",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
+    "time": "14:00-15:00",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3174,7 +3250,7 @@ const ITEM_DATA = {
     "title": "Parental Social Dominance Orientation and Preschool Children's Theory of Mind: Evidence from China",
     "presenter_label": "Yu Li",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
+    "time": "14:00-15:00",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3192,7 +3268,7 @@ const ITEM_DATA = {
     "title": "Ragebaiting the Neurodivergent: Frustration in Masocore Video Games and the Protective Factor of Enjoying Challenge for Individuals with ADHD-Like Emotion Dysregulation Symptoms",
     "presenter_label": "Jeff Beard",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
+    "time": "14:00-15:00",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3210,7 +3286,7 @@ const ITEM_DATA = {
     "title": "",
     "presenter_label": "Hanning Wang",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
+    "time": "14:00-15:00",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3228,7 +3304,7 @@ const ITEM_DATA = {
     "title": "",
     "presenter_label": "Kaja Bergmann",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
+    "time": "14:00-15:00",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3246,7 +3322,7 @@ const ITEM_DATA = {
     "title": "The Australian social media ban – parental and expert perceptions",
     "presenter_label": "Dr Elizabeth Clancy",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
+    "time": "14:00-15:00",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3264,7 +3340,7 @@ const ITEM_DATA = {
     "title": "When Moral Problems Feel Urgent: Moral Construal and Symptom-Focused Action",
     "presenter_label": "Michael Arntz",
     "day": "Day 3 (28-Nov)",
-    "time": "13:00-14:00",
+    "time": "14:00-15:00",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3410,7 +3486,7 @@ const ITEM_DATA = {
     "presenter_label": "Callyn Farrell, Serena Pehlivanidis, Scarlet Rosa, Charlie Pittaway, Michael Thai",
     "day": "Day 1 (26-Nov)",
     "time": "16:00-17:00",
-    "room": "Camelot",
+    "room": "Tower Room",
     "fixed": false,
     "presentations": [
       {
@@ -3492,9 +3568,9 @@ const ITEM_DATA = {
     "theme": "Mixed",
     "title": "SOMA: An Open Stimulus Library for Mechanistic and Equitable Mindfulness Research",
     "presenter_label": "Alessandro Sparacio",
-    "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
-    "room": "Great Hall 2",
+    "day": "Day 1 (26-Nov)",
+    "time": "18:00-19:00",
+    "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
       {
@@ -3511,8 +3587,8 @@ const ITEM_DATA = {
     "title": "Motives Social Media Use and Mental Health in Older and Younger Adults: A Longitudinal Study with a Momentary Follow-Up",
     "presenter_label": "Xiaojing Lei",
     "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
-    "room": "Great Hall 2",
+    "time": "16:30-17:30",
+    "room": "Great Hall 1",
     "fixed": false,
     "presentations": [
       {
@@ -3529,7 +3605,7 @@ const ITEM_DATA = {
     "title": "More than positivity? The impact of weight-inclusive messaging on collective action and body satisfaction across the weight spectrum.",
     "presenter_label": "Joanne Rathbone",
     "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
+    "time": "15:30-16:30",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3547,7 +3623,7 @@ const ITEM_DATA = {
     "title": "Understanding the Experiences of LGBTQIA+ Migrants in Australia: An intersectional perspective.",
     "presenter_label": "Ialy Baia",
     "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
+    "time": "15:30-16:30",
     "room": "Great Hall 3",
     "fixed": true,
     "presentations": [
@@ -3565,7 +3641,7 @@ const ITEM_DATA = {
     "title": "Beyond consultation: Centring Intersectionality Through Youth-Led Co-Design with Culturally and Racially Marginalised LGBTQ+ Young People",
     "presenter_label": "Vicky Xu",
     "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
+    "time": "15:30-16:30",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3583,7 +3659,7 @@ const ITEM_DATA = {
     "title": "Intersecting Identities, Mental Health and Belonging: A Mixed-Methods Study of multicultural LGBTQ+ Young People in Western Sydney",
     "presenter_label": "Ting Zhou",
     "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
+    "time": "15:30-16:30",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3619,7 +3695,7 @@ const ITEM_DATA = {
     "title": "From Neighbourhood Attributes to Nature Exposure: A Scoping Review of Objective Blue-Green Space Measurement in Health and Well-being Research",
     "presenter_label": "Yanmin Shi",
     "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
+    "time": "15:30-16:30",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3637,7 +3713,7 @@ const ITEM_DATA = {
     "title": "\"I’m going to get some tattoo therapy”: Exploring the tattoo artist/client relationship and motivations behind tattoos",
     "presenter_label": "Imogen Scholfield",
     "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
+    "time": "15:30-16:30",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3673,7 +3749,7 @@ const ITEM_DATA = {
     "title": "Student Wellbeing in Aotearoa New Zealand: The Relative Importance of School Context and Learning Experiences",
     "presenter_label": "Jill Hayhurst",
     "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
+    "time": "15:30-16:30",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3731,8 +3807,8 @@ const ITEM_DATA = {
     "theme": "Symposium",
     "title": "Adolescent Wellbeing in Schools and Beyond",
     "presenter_label": "Haochen Zhou, Alexander W. O’Donnell, Katherine J. Reynolds, V. Vanessa Wergin",
-    "day": "Day 3 (28-Nov)",
-    "time": "14:00-15:00",
+    "day": "Day 2 (27-Nov)",
+    "time": "8:30-9:30",
     "room": "Great Hall 1",
     "fixed": false,
     "presentations": [
@@ -3853,18 +3929,18 @@ const ITEM_DATA = {
   "S110": {
     "type": "Oral talk",
     "theme": "Identity, Gender & Intergroup",
-    "title": "Retracted research makes people feel less knowledgeable",
+    "title": "Contagious ignorance: People feel less knowledgeable about scientific phenomena when scientists’ credibility is questioned.",
     "presenter_label": "Stephen Hill",
     "day": "Day 3 (28-Nov)",
     "time": "15:30-16:30",
-    "room": "Great Hall 2",
+    "room": "Tower Room",
     "fixed": false,
     "presentations": [
       {
         "presenter": "Stephen Hill",
         "affiliation": "Massey University",
-        "title": "Retracted research makes people feel less knowledgeable",
-        "abstract": "Retracted research makes people feel less knowledgeable.\n\nPeople feel more knowledgeable about scientific topics when they believe experts understand those topics – an effect known as a contagious sense of understanding (Sloman & Rabb, 2016). This phenomenon is thought to occur because people confuse their ability to potentially access knowledge located inside a trusted epistemic community, for in-the-head knowledge. In an online experiment (N=166), we tested whether contagious understanding is impacted by the perceived credibility of members of the target epistemic community. Participants viewed a series of claims about scientists’ understanding of scientific phenomena and were told that scientists either understood or did not understand a phenomenon. In some cases participants were informed that the research had been retracted because of concerns about scientific integrity. Participants rated their personal understanding of the phenomena as well as the credibility of the scientists’ claims. We replicated the finding that people feel more knowledgeable when scientists claim to understand a phenomenon, but found that this contagious understanding was eliminated when the credibility of the scientists was questioned. The findings suggest that challenges to the credibility of experts may create an increased sense of personal epistemic uncertainty, which might – in turn – increase the attractiveness of alternative, potentially misleading, knowledge claims."
+        "title": "Contagious ignorance: People feel less knowledgeable about scientific phenomena when scientists’ credibility is questioned.",
+        "abstract": "Contagious ignorance: People feel less knowledgeable about scientific phenomena when scientists’ credibility is questioned.\n\nPeople feel more knowledgeable about scientific topics when they believe experts understand those topics – an effect known as a contagious sense of understanding (Sloman & Rabb, 2016). This phenomenon is thought to occur because people confuse their ability to potentially access knowledge located inside a trusted epistemic community, for in-the-head knowledge. In an online experiment (N=166), we tested whether contagious understanding is impacted by the perceived credibility of members of the target epistemic community. Participants viewed a series of claims about scientists’ understanding of scientific phenomena and were told that scientists either understood or did not understand a phenomenon. In some cases participants were informed that the research had been retracted because of concerns about scientific integrity. Participants rated their personal understanding of the phenomena as well as the credibility of the scientists’ claims. We replicated the finding that people feel more knowledgeable when scientists claim to understand a phenomenon, but found that this contagious understanding was eliminated when the credibility of the scientists was questioned. The findings suggest that challenges to the credibility of experts may create an increased sense of personal epistemic uncertainty, which might – in turn – increase the attractiveness of alternative, potentially misleading, knowledge claims."
       }
     ]
   },
@@ -3874,7 +3950,7 @@ const ITEM_DATA = {
     "title": "Contesting Gender: Stereotypes, Trans Inclusion, and Social Change",
     "presenter_label": "Oliver Sng, Shai Wittles, Emma F Jackson",
     "day": "Day 3 (28-Nov)",
-    "time": "15:30-16:30",
+    "time": "16:30-17:30",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -3955,7 +4031,7 @@ const ITEM_DATA = {
     "title": "Institute for Social Science Research, The University of Queensland",
     "presenter_label": "Ms Tayla Barber",
     "day": "Day 3 (28-Nov)",
-    "time": "16:30-17:30",
+    "time": "15:30-16:30",
     "room": "Tower Room",
     "fixed": false,
     "presentations": [
@@ -3971,14 +4047,14 @@ const ITEM_DATA = {
     "type": "Oral talk",
     "theme": "Education & Learning",
     "title": "Binding the People Through Colour: Te Reo Māori, Whakapapa, and the Social Psychology of Lexical Evolution",
-    "presenter_label": "TIA NEHA",
+    "presenter_label": "Tia Neha, Neil Dodgson",
     "day": "Day 3 (28-Nov)",
-    "time": "16:30-17:30",
+    "time": "15:30-16:30",
     "room": "Tower Room",
     "fixed": false,
     "presentations": [
       {
-        "presenter": "TIA NEHA",
+        "presenter": "Tia Neha, Neil Dodgson",
         "affiliation": "Te Herenga Waka - Victoria University of Wellington",
         "title": "Binding the People Through Colour: Te Reo Māori, Whakapapa, and the Social Psychology of Lexical Evolution",
         "abstract": "From a whakapapa-informed and evolutionary psychology perspective, language emerges from the relational and adaptive needs of communities rather than serving solely as a cognitive tool. Te reo Māori reflects this foundation through its role in strengthening whānau relationships, interpreting the environment, and transmitting knowledge, identity, and belonging across generations. Māori colour terminology provides a unique locus for understanding how language evolves in response to ecological, social, and cultural change.\nDrawing on Indigenous psychology, historical linguistics, and computational methods, this study examines three key developments in the Māori colour lexicon: the adaptation of Proto-Eastern Polynesian colour terms following settlement in Aotearoa, the incorporation of English colour terminology through colonial contact, and contemporary revitalisation efforts that extend meanings and reaffirm Māori ways of knowing. These developments reveal the ongoing interaction between linguistic adaptation and the enduring effects of colonisation.\nEarly evidence from cross-generational interviews and colour-stimuli tasks with kaumātua and rangatahi indicate generational differences in colour naming and regional variation. Participants moved between traditional Māori terms, loanwords, and English-derived classifications, reflecting the influence of colonial language contact on colour terminology. Together, these findings highlight the adaptability, and cultural significance of te reo Māori as a living system of knowledge and identity."
@@ -3991,7 +4067,7 @@ const ITEM_DATA = {
     "title": "Academic Social Comparison in Daily Life: Evidence from Two Ecological Momentary Assessment Studies",
     "presenter_label": "Rebecca T. Pinkus",
     "day": "Day 3 (28-Nov)",
-    "time": "16:30-17:30",
+    "time": "15:30-16:30",
     "room": "Tower Room",
     "fixed": false,
     "presentations": [
@@ -4082,7 +4158,7 @@ const ITEM_DATA = {
     "presenter_label": "Zoe-Mei Duffin-Pruksapun, Ava Disney, Vera Fahrner, Tomás Gago",
     "day": "Day 3 (28-Nov)",
     "time": "16:30-17:30",
-    "room": "Great Hall 2",
+    "room": "Camelot",
     "fixed": false,
     "presentations": [
       {
@@ -4121,8 +4197,8 @@ const ITEM_DATA = {
     "theme": "Symposium",
     "title": "Physiological Stress Responses and Social Identity",
     "presenter_label": "Aoife Marie Foran, Natalie Craig, Anna Mariya Lashkay, Alzbetha Lebdova",
-    "day": "Day 3 (28-Nov)",
-    "time": "16:30-17:30",
+    "day": "Day 1 (26-Nov)",
+    "time": "17:00-18:00",
     "room": "Great Hall 3",
     "fixed": false,
     "presentations": [
@@ -4162,8 +4238,8 @@ const ITEM_DATA = {
     "title": "Ideological asymmetries in gender identification among women: A latent profile analysis of gender identity centrality and ambivalent sexism",
     "presenter_label": "Natalia M Simionato",
     "day": "Day 3 (28-Nov)",
-    "time": "16:30-17:30",
-    "room": "Camelot",
+    "time": "15:30-16:30",
+    "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
       {
@@ -4180,8 +4256,8 @@ const ITEM_DATA = {
     "title": "",
     "presenter_label": "John A. Hunter",
     "day": "Day 3 (28-Nov)",
-    "time": "16:30-17:30",
-    "room": "Camelot",
+    "time": "15:30-16:30",
+    "room": "Great Hall 2",
     "fixed": false,
     "presentations": [
       {
@@ -4344,7 +4420,6 @@ const DEFAULT_STATE = {
         "S084",
         "S097",
         "S108",
-        "S149",
         "S183",
         "S230",
         "S079"
@@ -4407,7 +4482,6 @@ const DEFAULT_STATE = {
         "S103",
         "S129",
         "S138",
-        "S231",
         "S124",
         "S215",
         "S212",
